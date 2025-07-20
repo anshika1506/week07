@@ -1,0 +1,157 @@
+.home-page {
+  padding: 20px 0;
+}
+.hero {
+  background: linear-gradient(135deg, #1F2937, #4B5563, #6B7280);
+  color: white;
+  padding: 100px 40px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+}
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.shop-now {
+  background: linear-gradient(90deg, #EC4899, #F472B6);
+  color: white;
+  padding: 16px 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(236, 72, 153, 0.3);
+}
+.shop-now:hover {
+  background: linear-gradient(90deg, #DB2777, #EC4899);
+  box-shadow: 0 6px 12px rgba(236, 72, 153, 0.4);
+}
+
+.top-sections, .bottom-sections {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.trending-section, .flash-sale-section, .recommended-section, .mostly-sold-section {
+  flex: 1;
+  background-color: #F9FAFB;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sponsored-section {
+  background-color: #F9FAFB;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  text-align: center;
+}
+.trending-section h2, .flash-sale-section h2, .recommended-section h2, .mostly-sold-section h2, .sponsored-section h2, .delivery-info h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #EC4899;
+  padding-bottom: 10px;
+}
+.trending-items, .flash-sale-items, .recommended-items, .mostly-sold-items, .sponsored-items {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+.trending-item, .recommended-item, .mostly-sold-item, .flash-sale-item, .sponsored-item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 220px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.trending-item:hover, .recommended-item:hover, .mostly-sold-item:hover, .flash-sale-item:hover, .sponsored-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.trending-item-image, .recommended-item-image, .mostly-sold-item-image, .flash-sale-item-image, .sponsored-item-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.trending-item-details, .recommended-item-details, .mostly-sold-item-details, .flash-sale-item-details, .sponsored-item-details {
+  padding: 12px;
+  text-align: center;
+}
+.trending-item-details h3, .recommended-item-details h3, .mostly-sold-item-details h3, .flash-sale-item-details h3, .sponsored-item-details h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2937;
+  margin-bottom: 8px;
+}
+.trending-item-details p, .recommended-item-details p, .mostly-sold-item-details p, .flash-sale-item-details .flash-sale-price, .sponsored-item-details p {
+  font-size: 15px;
+  color: #EC4899;
+}
+.flash-sale-item-details .original-price {
+  color: #9CA3AF;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+.timer {
+  color: #F472B6;
+  font-weight: 600;
+  margin-left: 15px;
+  font-size: 16px;
+}
+.sponsor-label {
+  color: #EC4899;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.delivery-info {
+  background-color: #F9FAFB;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.delivery-info p {
+  font-size: 18px;
+  color: #4B5563;
+  line-height: 1.6;
+}
+.delivery-info strong {
+  color: #EC4899;
+}
+
+@media (max-width: 768px) {
+  .top-sections, .bottom-sections {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 50px 20px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  .trending-item, .recommended-item, .mostly-sold-item, .flash-sale-item, .sponsored-item {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+.cart-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 30px;
+}
+.cart-total {
+  text-align: right;
+  margin-top: 30px;
+}
+.cart-total p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #10B981;
+}
+.checkout-btn {
+  background: linear-gradient(90deg, #1D4ED8, #3B82F6);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.checkout-btn:hover {
+  background: linear-gradient(90deg, #1E40AF, #2563EB);
+}

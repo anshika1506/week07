@@ -1,0 +1,47 @@
+.myorders-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1F2937, #4B5563);
+  min-height: calc(100vh - 80px);
+}
+.myorders-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+.myorders-container h2 {
+  font-size: 32px;
+  color: #1F2937;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.orders-list {
+  list-style: none;
+  padding: 0;
+}
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #F9FAFB;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.order-item span {
+  font-size: 16px;
+  color: #4B5563;
+}
+@media (max-width: 480px) {
+  .order-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .order-item span {
+    margin-bottom: 5px;
+  }
+}
