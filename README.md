@@ -20,7 +20,7 @@ npm (comes with Node.js) 📦
 
 Installation 🛠️
 
-Clone the repository: git clone https://github.com/your-username/e-commerce-store.git
+Clone the repository: https://github.com/anshika1506/week07
 Navigate to the project directory: cd e-commerce-store
 Install dependencies: npm install
 Running the Project ▶️
